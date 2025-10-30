@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: MR;
+    src: url(../fonts/Montserrat\ Regular.ttf);
+}
+@font-face {
+    font-family: MB;
+    src: url(../fonts/Montserrat\ Bold.ttf);
+}
+body {
+    background-color: #80BFEF;
+}
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #3359FA;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+header p {
+    font-family: MB;
+    font-size: 50px;
+}
+nav {
+    width: 100%;
+    background-color: #4D83F5;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    font-family: MR;
+    font-size: 24px;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+.chapter {
+    font-family: MB;
+    font-size: 34px;
+    width: 100%;
+    background-color: #4D83F5;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.udm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px;
+}
+.udm_title {
+    font-family: MB;
+    font-size: 30px;
+    text-align: center;
+}
+.udm_txt {
+    font-family: MR;
+    font-size: 26px;
+}
+.zarnica {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+    gap: 30px;
+    font-family: MR;
+    font-size: 22px;
+}
+.zarnica p{
+    width: 700px;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 80%;
+    overflow: hidden;
+    margin: 30px 0 0 150px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slide img {
+    width: 100%;
+    display: block;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+button.prev {
+    left: 10px;
+}
+button.next {
+    right: 10px;
+}
+.p {
+    margin: 30px;
+    font-family: MR; 
+    font-size: 24px;
+}
+.teachers_day {
+    display: flex;
+    align-items: center;
+    font-family: MR;
+    font-size: 22px;
+    margin: 30px;
+    gap: 15px;
+}
+.teachers_day img {
+    width: 40%;
+}
+.zd {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    font-family: MR;
+    font-size: 24px;
+    gap: 15px;
+}
+.new_year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-family: MR;
+    font-size: 26px;
+    gap: 15px;
+}
+.smotr_pesni {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-family: MR;
+    font-size: 24px;
+    gap: 15px;
+}
+.school_day {
+    display: flex;
+    margin: 30px;
+    gap: 15px;
+    justify-content: center;
+}
+.school_day img {
+    width: 30%;
+}
+.school_day_p {
+    font-family: MR;
+    font-size: 24px;
+    margin: 15px 30px 15px 30px;
+}
+.dp {
+    display: flex;
+    align-items: center;
+    font-family: MR;
+    font-size: 26px;
+    margin: 30px;
+    gap: 15px;
+}
+.dp_img img {
+    width: 100%;   
+}
+.pz {
+    display: flex;
+    align-items: center;
+    font-family: MR;
+    font-size: 22px;
+    margin: 30px;
+    gap: 15px; 
+}
+footer {
+    display: flex;
+    background-color: rgba(25, 102, 245, 0.6);
+    width: 100%;
+    justify-content: center;
+    gap: 20%;
+}
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+.info_img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.info_txt {
+    font-family: MR;
+    font-size: 24px;
+}
+.info_txt:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+.vk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vk_img {
+    width: 40px;
+}
+.loc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    font-family: MR;
+    font-size: 24px;
+}
+.loc_img {
+    width: 20px;
+}
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: MR;
+    font-size: 24px;
+}
+.phone_txt {
+    width: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        text-align: center;
+        display: block;
+        height: 24px;
+    }
+    header p {
+        font-size: 20px;
+    }
+    ul {
+        gap: 10px;
+        font-size: 15px;
+    }
+    .chapter {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .udm {
+        display: block;
+        gap: 0;
+        margin: 10px;
+    }
+    .udm_title {
+        font-size: 16px;
+    }
+    .udm_txt {
+        font-size: 13px;
+        text-align: justify;
+    }
+    .udm img {
+        width: 80%;
+        margin-left: 37px;
+    }
+    .zarnica {
+        display: block;
+        text-align: justify;
+        margin: 10px;
+        gap: 0;
+        font-size: 13px;
+    }
+    .zarnica img {
+        width: 80%;
+        margin-left: 37px;
+    }
+    .zarnica p{
+        width: auto;
+    }
+    .slider {
+        margin: 8px 0 0 0;
+        max-width: 100%;
+    }
+    button {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .p {
+        margin: 10px;
+        font-size: 13px;
+    }
+    .teachers_day {
+        display: block;
+        font-size: 13px;
+        margin: 10px;
+        gap: 0;
+    }
+    .teachers_day img {
+        width: 80%;
+        margin-left: 37px;
+    }
+    .zd {
+        display: block;
+        margin: 10px;
+        font-size: 13px;
+        gap: 0;
+        text-align: justify;
+    }
+    .zd img {
+        width: 80%;
+        margin-left: 37px;
+    }
+    .new_year {
+        display: block;
+        margin: 10px;
+        font-size: 13px;
+        gap: 0;
+        text-align: justify;
+    }
+    .new_year img {
+        width: 80%;
+        margin-left: 37px;
+    }
+    .smotr_pesni {
+        display: block;
+        margin: 10px;
+        font-size: 13px;
+        gap: 0;
+        text-align: justify;
+    }
+    .smotr_pesni img {
+        width: 80%;
+        margin-left: 37px;
+    }
+    .school_day {
+        display: flex;
+        margin: 10px;
+        gap: 5px;
+    }
+    .school_day img {
+        width: 50%;
+    }
+    .i3 {
+        display: none;
+    }
+    .school_day_p {
+        font-size: 13px;
+        text-align: justify;
+        margin: 10px;
+    }
+    .dp {
+        display: block;
+        font-size: 13px;
+        margin: 10px;
+        gap: 0;
+        text-align: justify;
+    }
+    .dp_img {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+    .dp_img img {
+        width: 45%;  
+    }
+    .pz {
+        display: block;
+        font-size: 13px;
+        margin: 10px;
+        gap: 0; 
+        text-align: justify;
+    }
+    .pz img {
+        width: 80%;
+        margin-left: 37px;
+    }
+    footer {
+        display: block;
+        gap: 0;
+    }
+    .logo {
+        display: none;
+    }
+    .info {
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+    .info_img {
+        width: 15px;
+        height: 15px;
+    }
+    .info_txt {
+        font-size: 13px;
+    }
+    .vk_img {
+        width: 25px;
+    }
+    .loc {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+    .loc_img {
+        width: 10px;
+        margin-right: 5px;
+    }
+    .phone {
+        font-size: 13px;
+    }
+    .phone_txt {
+        width: 10px;
+        margin-right: 5px;
+    }
+}

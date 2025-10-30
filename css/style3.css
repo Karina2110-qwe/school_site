@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: MR;
+    src: url(../fonts/Montserrat\ Regular.ttf);
+}
+@font-face {
+    font-family: MB;
+    src: url(../fonts/Montserrat\ Bold.ttf);
+}
+body {
+    background-color: #80BFEF;
+}
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #3359FA;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+header p {
+    font-family: MB;
+    font-size: 50px;
+}
+nav {
+    width: 100%;
+    background-color: #4D83F5;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    font-family: MR;
+    font-size: 24px;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.chapter {
+    font-family: MB;
+    font-size: 34px;
+    width: 100%;
+    background-color: #4D83F5;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.first_v {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-family: MB;
+    font-size: 30px;
+    text-align: center;
+}
+.v_1 {
+    margin-left: -50px;
+}
+.img2 {
+    width: 50%;
+}
+.img1 {
+    width: 60%;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 80%;
+    overflow: hidden;
+    margin: 30px 0 0 150px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slide img {
+    width: 100%;
+    display: block;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+button.prev {
+    left: 10px;
+}
+button.next {
+    right: 10px;
+}
+.officers {
+    font-family: MB;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+}
+.officers_block {
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.officers_block img {
+    width: 30%;
+    margin-left: 35px;
+}
+.officers_block p {
+    font-family: MR;
+    font-size: 24px;
+    margin-left: 35px;
+}
+.remember {
+    text-align: justify;
+    align-items: center;
+    font-family: MR;
+    font-size: 22px;
+    margin: 30px;
+    gap: 15px;
+}
+.remember img {
+    width: 30%;
+    margin-left: 500px;
+}
+.sport {
+    display: flex;
+    margin: 30px;
+}
+.sport_1 {
+    font-family: MR;
+    font-size: 24px;
+    text-align: center;
+}
+.sport_1 img {
+    width: 50%;
+}
+.sport_2{
+    font-family: MR;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 80px;
+}
+footer {
+    display: flex;
+    background-color: rgba(25, 102, 245, 0.6);
+    width: 100%;
+    justify-content: center;
+    gap: 20%;
+}
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+.info_img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.info_txt {
+    font-family: MR;
+    font-size: 24px;
+}
+.info_txt:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+.vk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vk_img {
+    width: 40px;
+}
+.loc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    font-family: MR;
+    font-size: 24px;
+}
+.loc_img {
+    width: 20px;
+}
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: MR;
+    font-size: 24px;
+}
+.phone_txt {
+    width: 20px;
+}
+
+@media screen and (max-width: 500px) {
+   header {
+        text-align: center;
+        display: block;
+        height: 24px;
+    }
+    header p {
+        font-size: 20px;
+    }
+    ul {
+        gap: 10px;
+        font-size: 15px;
+    }
+    .first_v {
+        display: block;
+        margin: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .v_1 {
+        margin-left: 0;
+    }
+    .img2 {
+        width: 50%;
+    }
+    .img1 {
+        width: 60%;
+    }
+    .chapter {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .slider {
+        max-width: 100%;
+        margin: 8px 0 0 0;
+    }
+    button {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .officers {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .officers_block {
+        display: block;
+        text-align: center;
+        margin: 10px;
+        gap: 10px;
+    }
+    .officers_block img {
+        width: 60%;
+        margin-left: 0;
+    }
+    .officers_block p {
+        font-size: 13px;
+        margin-left: 0;
+    }
+    .remember {
+        font-size: 13px;
+        margin: 10px;
+        gap: 0;
+    }
+    .remember img {
+        width: 80%;
+        margin-left: 37px;
+    }
+    .sport {
+        display: block;
+        margin: 10px;
+    }
+    .sport_1 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .sport_1 img {
+        width: 50%;
+    }
+    .sport_2{
+        font-size: 15px;
+        width: 355px;
+    }
+    footer {
+        display: block;
+        gap: 0;
+    }
+    .logo {
+        display: none;
+    }
+    .info {
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+    .info_img {
+        width: 15px;
+        height: 15px;
+    }
+    .info_txt {
+        font-size: 13px;
+    }
+    .vk_img {
+        width: 25px;
+    }
+    .loc {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+    .loc_img {
+        width: 10px;
+        margin-right: 5px;
+    }
+    .phone {
+        font-size: 13px;
+    }
+    .phone_txt {
+        width: 10px;
+        margin-right: 5px;
+    }
+}
